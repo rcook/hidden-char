@@ -1,0 +1,16 @@
+#!/bin/bash
+############################################################
+#
+# upload-docs
+# Copyright (C) 2017, Richard Cook
+# Released under MIT License
+# https://github.com/rcook/hidden-char
+#
+############################################################
+
+set -euo pipefail
+IFS=$'\n\t'
+
+script_dir=$(cd $(dirname $0); pwd -P)
+
+$script_dir/bootstrap $script_dir/upload-docs.py $*

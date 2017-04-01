@@ -1,0 +1,23 @@
+#!/bin/bash
+############################################################
+#
+# bootstrap
+# Copyright (C) 2017, Richard Cook
+# Released under MIT License
+# https://github.com/rcook/hidden-char
+#
+############################################################
+
+set -euo pipefail
+IFS=$'\n\t'
+
+script_dir=$(cd $(dirname $0); pwd -P)
+python_path=$script_dir/bin/python
+pip_path=$script_dir/bin/pip
+
+if [ ! -e $python_path ]; then
+    virtualenv $script_dir
+fi
+
+$pip_path install -q -r $script_dir/requirements.txt
+$python_path $*
