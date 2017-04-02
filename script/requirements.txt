@@ -1,2 +1,2 @@
 grip
-pyprelude
+upload-haddocks
