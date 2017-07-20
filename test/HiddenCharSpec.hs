@@ -30,8 +30,8 @@ spec = do
             -- On another bound thread, count up to a given value with a small
             -- delay at each step. runInBoundThread should terminate and return
             -- the expected value if getHiddenChar works correctly. In the presence
-            -- of calls to functions via the "unsafe", then this thread will block.
-            -- This is a behaviour we would like to avoid.
+            -- of calls to functions via the "unsafe" FFI, then this thread will
+            -- block. This is a behaviour we would like to avoid.
             -- https://github.com/rcook/hidden-char/issues/1
             let countUpTo :: Int -> IO Int
                 countUpTo n = helper n n
