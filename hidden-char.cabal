@@ -32,10 +32,11 @@ library
 test-suite hidden-char-test
   type:                             exitcode-stdio-1.0
   default-language:                 Haskell2010
-  ghc-options:                      -W -Wall
+  ghc-options:                      -W -Wall -threaded
   hs-source-dirs:                   test
   main-is:                          Main.hs
   build-depends:                    base >= 4.7 && < 5
+                                  , hidden-char
                                   , hspec
   if os(linux)
     cpp-options:                    -DOS_LINUX
@@ -43,3 +44,4 @@ test-suite hidden-char-test
     cpp-options:                    -DOS_WINDOWS
   if os(darwin)
     cpp-options:                    -DOS_MACOS
+  other-modules:                    HiddenCharSpec
