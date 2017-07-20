@@ -6,6 +6,34 @@
 
 Provides a `getHiddenChar` function that works on Windows, Linux and macOS
 
+## Dev guide
+
+This project is built using the [Stack][stack] build tool.
+
+### Build
+
+```
+stack build
+```
+
+### Test
+
+```
+stack test
+```
+
+### Upload package
+
+```
+stack upload .
+```
+
+### Upload documentation
+
+```
+script/upload-haddocks
+```
+
 ## Licence
 
 [MIT License][licence]
@@ -13,3 +41,4 @@ Provides a `getHiddenChar` function that works on Windows, Linux and macOS
 Copyright &copy; 2017, Richard Cook.
 
 [licence]: LICENSE
+[stack]: http://haskellstack.org/
