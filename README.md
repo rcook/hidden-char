@@ -34,11 +34,16 @@ stack upload .
 script/upload-haddocks
 ```
 
+## Releases
+
+[View change log for more information][change-log]
+
 ## Licence
 
 [MIT License][licence]
 
 Copyright &copy; 2017, Richard Cook.
 
+[change-log]: CHANGELOG.md
 [licence]: LICENSE
 [stack]: http://haskellstack.org/
