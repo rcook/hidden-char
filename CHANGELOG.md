@@ -1,4 +1,8 @@
-# Change history
+# Change log
+
+## Version 0.1.0.2
+
+* Use `_getch` instead of deprecated `getch` function (https://github.com/rcook/hidden-char/pull/2)
 
 ## Version 0.1.0.1
 
