@@ -30,8 +30,11 @@ stack upload .
 
 ### Upload documentation
 
+I use [`upload-haddocks`][upload-haddocks] which requires a functioning installation of Python and pip:
+
 ```
-script/upload-haddocks
+pip install --user upload-haddocks
+upload-haddocks
 ```
 
 ## Releases
@@ -47,3 +50,4 @@ Copyright &copy; 2017, Richard Cook.
 [change-log]: CHANGELOG.md
 [licence]: LICENSE
 [stack]: http://haskellstack.org/
+[upload-haddocks]: https://github.com/rcook/upload-haddocks
