@@ -1,5 +1,5 @@
 name:                               hidden-char
-version:                            0.1.0.2
+version:                            0.1.0.3
 synopsis:                           Provides getHiddenChar function
 description:                        Provides a @getHiddenChar@ function that works on Windows, Linux and macOS
 homepage:                           https://github.com/rcook/hidden-char#readme
