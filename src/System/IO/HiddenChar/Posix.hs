@@ -6,6 +6,8 @@ Licence     : MIT
 Maintainer  : rcook@rcook.org
 Stability   : stable
 Portability : portable
+
+Provides the Posix implementation of @getHiddenChar@
 -}
 
 module System.IO.HiddenChar.Posix (getHiddenChar) where

@@ -7,7 +7,7 @@ Maintainer  : rcook@rcook.org
 Stability   : stable
 Portability : portable
 
-This package provides a @getHiddenChar@ function which works reasonably
+This module provides a @getHiddenChar@ function which works reasonably
 consistently across the Windows, Linux and macOS platforms. @getHiddenChar@
 yields a single character from the standard input device with buffering and
 echoing to standard output disabled.

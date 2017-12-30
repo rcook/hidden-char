@@ -6,6 +6,8 @@ Licence     : MIT
 Maintainer  : rcook@rcook.org
 Stability   : stable
 Portability : portable
+
+Provides the Windows implementation of @getHiddenChar@
 -}
 
 {-# LANGUAGE ForeignFunctionInterface #-}
