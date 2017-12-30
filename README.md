@@ -4,11 +4,11 @@
 [![Hackage](https://img.shields.io/hackage/v/hidden-char.svg)](http://hackage.haskell.org/package/hidden-char)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/rcook/hidden-char/master/LICENSE)
 
-Provides a `getHiddenChar` function that works on Windows, Linux and macOS
+This package provides a `getHiddenChar` function which works reasonably consistently across the Windows, Linux and macOS platforms. `getHiddenChar` yields a single character from the standard input device with buffering and echoing to standard output disabled.
 
 ## Dev guide
 
-This project is built using the [Stack][stack] build tool.
+This project can be built using the [Stack][stack] build tool.
 
 ### Build
 
@@ -30,7 +30,7 @@ stack upload .
 
 ### Upload documentation
 
-I use [`upload-haddocks`][upload-haddocks] which requires a functioning installation of Python and pip:
+I use my [`upload-haddocks`][upload-haddocks] tool which requires a functioning installation of Python and pip:
 
 ```
 pip install --user upload-haddocks
